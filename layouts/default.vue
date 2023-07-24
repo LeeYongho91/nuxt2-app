@@ -1,19 +1,27 @@
 <template>
   <div>
-    <h1>
-      <NuxtLink to="/">Nuxt Shopping</NuxtLink>
-   </h1>
+    <header class="title">
+      <nuxt-link class="logo" to="/">Nuxt Shopping</nuxt-link>
+    </header>
     <Nuxt />
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
+<style scoped>
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+.logo {
+  font-weight: 900;
+}
+.logo:visited {
+  color: inherit;
+}
 </style>
-
