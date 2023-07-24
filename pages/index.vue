@@ -53,7 +53,9 @@ export default {
       searchKeyword: '',
     };
   },
-  async created() {},
+  async created() {
+    console.log(`test`);
+  },
   methods: {
     moveToDetailPage(id) {
       this.$router.push(`detail/${id}`);
