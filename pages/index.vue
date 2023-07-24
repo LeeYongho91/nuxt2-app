@@ -54,7 +54,7 @@ export default {
     };
   },
   async created() {
-    console.log(`test`);
+
   },
   methods: {
     moveToDetailPage(id) {
