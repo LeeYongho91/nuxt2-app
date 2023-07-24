@@ -69,7 +69,7 @@ export default {
     },
     moveToCartPage() {
       this.$router.push(`/cart`);
-      console.log(`test`);
+
     },
   },
 };
