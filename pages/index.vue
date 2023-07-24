@@ -40,7 +40,37 @@ export default {
   components: {
     SearchInput,
   },
- 
+  async asyncData() {
+    const response = await axios.get('http://localhost:3000/products');
+    const products = response.data.map(item => ({
+      ...item,
+      imageUrl: `${item.imageUrl}?random=${Math.random()}`,
+    }));
+    return { products };
+  },
+  data() {
+    return {
+      searchKeyword: '',
+    };
+  },
+  async created() {
+
+  },
+  methods: {
+    moveToDetailPage(id) {
+      this.$router.push(`detail/${id}`);
+    },
+    async searchProducts() {
+      const { data } = await fetchProductsByKeyword(this.searchKeyword);
+      this.products = data.map(item => ({
+        ...item,
+        imageUrl: `${item.imageUrl}?random=${Math.random()}`,
+      }));
+    },
+    moveToCartPage() {
+      this.$router.push(`/cart`);
+    },
+  },
 };
 </script>
 
