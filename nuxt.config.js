@@ -27,6 +27,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    // 'nuxt-vite',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -34,9 +35,13 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [({ isLegacy }) => isLegacy && 'axios']
+    transpile: [({ isLegacy }) => isLegacy && 'axios'],
   },
   server: {
-    port: 5001
-  }
-}
+    port: 5001,
+  },
+  // vite: {
+  //   build: true,
+  //   ssr: true,
+  // },
+};
