@@ -1,6 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
+  enerate: {
+    fallback: true
+  },
   head: {
     title: 'nuxt-app',
     htmlAttrs: {
