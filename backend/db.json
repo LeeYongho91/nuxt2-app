@@ -223,6 +223,12 @@
       "name": "Refined Fresh Chicken",
       "price": "209.00",
       "imageUrl": "https://loremflickr.com/g/640/480/paris?random=0.9271343740835454"
+    },
+    {
+      "id": 2,
+      "name": "Handcrafted Frozen Pizza",
+      "price": "315.00",
+      "imageUrl": "https://loremflickr.com/g/640/480/paris?random=0.3302341285438797"
     }
   ]
 }
