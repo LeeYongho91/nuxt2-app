@@ -52,12 +52,6 @@ export default {
           content: 'https://loremflickr.com/g/640/480/paris',
         },
       ],
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Roboto&display=swap',
-        },
-      ],
     };
   },
   methods: {
