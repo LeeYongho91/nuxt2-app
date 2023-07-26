@@ -49,7 +49,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'http://placeimg.com/640/480/fashion',
+          content: 'https://loremflickr.com/g/640/480/paris',
         },
       ],
       link: [
