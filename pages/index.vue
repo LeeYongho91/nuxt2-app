@@ -53,9 +53,7 @@ export default {
       searchKeyword: '',
     };
   },
-  async created() {
-
-  },
+  async created() {},
   methods: {
     moveToDetailPage(id) {
       this.$router.push(`detail/${id}`);
@@ -69,7 +67,6 @@ export default {
     },
     moveToCartPage() {
       this.$router.push(`/cart`);
-
     },
   },
 };
